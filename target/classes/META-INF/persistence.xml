@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="TpPu">
+        <class>fr.epsi.vincent.model.article.CD</class>
+        <class>fr.epsi.vincent.model.article.Article</class>
+        <class>fr.epsi.vincent.model.article.DVD</class>
+        <class>fr.epsi.vincent.model.article.Livre</class>
+        <class>fr.epsi.vincent.model.Style</class>
+        <class>fr.epsi.vincent.model.Commande</class>
+        <class>fr.epsi.vincent.model.personne.Personne</class>
+        <class>fr.epsi.vincent.model.personne.Acteur</class>
+        <class>fr.epsi.vincent.model.personne.Artiste</class>
+        <class>fr.epsi.vincent.model.personne.Auteur</class>
+        <class>fr.epsi.vincent.model.personne.Realisateur</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/jdbc-TPORM" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="abcd" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="javax.persistence.schema-generation.database.action" value="create" />
+
+        </properties>
+    </persistence-unit>
+
+</persistence>
